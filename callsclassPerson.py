@@ -56,14 +56,14 @@ if separate == "Separate" or separate == "Se":
 
 elif separate == "Socialize" or separate == "So":
     print("Uh- oh, I think they're gonna fight!")
-    if Person1.weight and Person1.height > Person2.weight and Person2.height:
+    if Person1.weight > Person2.weight and Person1.height > Person2.height:
         print("Oh snap!! They are fighting!!")
         print(Person1.name, "is bigger and taller than", Person2.name + ", so they had the advantage.")
         print("I blame you for this.")
         print("All you had to do was separate them!")
         print("You cannot stay here, bye!")
         exit()
-    elif Person1.weight and Person1.height < Person2.weight and Person2.height:
+    elif Person1.weight < Person2.weight and Person1.height < Person2.height:
         print("Oh my gosh! They're throwing hands!")
         print(Person2.name, "is killing", Person1.name + ".")
         print(Person1.name, "is dead.")
@@ -101,11 +101,17 @@ elif separate == "Socialize" or separate == "So":
                     print("""8b       88 8PP""""""" ,adPPPPP88   88    88       88""")
                     print(""" 8a,   ,d88 "8b,   ,aa 88,    ,88   88,   88       88""")
                     print(""" `"8bbdP"Y8  `"Ybbd8"' `"8bbdP"Y8   "Y888 88       88""")
+                    print("\n\n\n\n\n")
+                    print("You lose")
                     exit()
 
                 elif Warrior.strength < Person1.strength + Person2.strength and Warrior.weight < Person1.weight + Person2.weight and Warrior.height < Person1.height + Person2.height and Warrior.age < Person1.age + Person2.age:
                     print("You stabbed the warrior... the warrior named ", Warrior.name)
                     print("You WiN")
+                    exit()
+
+                else:
+                    print(Person1.name, "and", Person2.name, "the Warrior killed each other")
                     exit()
 
             elif rn > 0:
@@ -122,6 +128,7 @@ elif separate == "Socialize" or separate == "So":
                     print("You WiN")
                     exit()
                 else:
+                    print("\n\n\n\n\n")
                     print("           88                               88")
                     print("           88                         ,d    88")
                     print("           88                         88    88")
@@ -130,4 +137,20 @@ elif separate == "Socialize" or separate == "So":
                     print("""8b       88 8PP""""""" ,adPPPPP88   88    88       88""")
                     print(""" 8a,   ,d88 "8b,   ,aa 88,    ,88   88,   88       88""")
                     print(""" `"8bbdP"Y8  `"Ybbd8"' `"8bbdP"Y8   "Y888 88       88""")
+                    print("\n\n\n\n\n")
+                    print("You have been killed.")
                     exit()
+            else:
+                print("The Universe has been destroyed")
+                print("Everyone loses")
+                print("\n\n\n\n\n")
+                print("           88                               88")
+                print("           88                         ,d    88")
+                print("           88                         88    88")
+                print(""" ,adPPYb,88  ,adPPYba, ,adPPYYba, MM88MMM 88,dPPYba,""")
+                print("""a8"    `Y88 a8P_____88 ""     `Y8   88    88P'    "8a""")
+                print("""8b       88 8PP""""""" ,adPPPPP88   88    88       88""")
+                print(""" 8a,   ,d88 "8b,   ,aa 88,    ,88   88,   88       88""")
+                print(""" `"8bbdP"Y8  `"Ybbd8"' `"8bbdP"Y8   "Y888 88       88""")
+                print("\n\n\n\n\n")
+                exit()
